@@ -31,6 +31,7 @@ repositories {
 }
 
 dependencies {
+    implementation name: 'wot-td-java', version: '0.0.1'
 	compile ('org.jacamo:jacamo:0.9') {
         exclude group: 'org.slf4j', module: 'slf4j-nop'
     }
@@ -38,6 +39,9 @@ dependencies {
 	compile 'javax.xml.bind:jaxb-api:2.3.1'
 	compile 'com.sun.xml.bind:jaxb-core:2.3.0.1'
 	compile 'com.sun.xml.bind:jaxb-impl:2.3.1'
+
+    implementation 'org.apache.httpcomponents.client5:httpclient5:5.1'
+    implementation 'org.apache.httpcomponents.client5:httpclient5-fluent:5.1'
 
 	compile 'org.glassfish.jersey.containers:jersey-container-servlet:2.29.1'
 	compile 'org.glassfish.jersey.containers:jersey-container-servlet-core:2.29.1'

@@ -1,1 +1,1 @@
-rootProject.name = 'jacamo-rest'
+includeBuild("wot-td-java")
